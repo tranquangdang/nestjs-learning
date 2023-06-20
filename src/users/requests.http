@@ -1,0 +1,8 @@
+### Sign Up
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+    "email": "asdf",
+    "password": "1234"
+}
