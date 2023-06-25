@@ -3,6 +3,25 @@ POST http://localhost:8080/auth/signup
 Content-Type: application/json
 
 {
-    "email": "asdf",
+    "email": "asdf@sas.com",
     "password": "1234"
+}
+
+### Find user
+GET http://localhost:8080/auth/1
+
+### Find user by email
+GET http://localhost:8080/auth?email=asdf@sas.com
+
+
+### Find user by email
+DELETE http://localhost:8080/auth/1
+
+
+### Update user
+PATCH http://localhost:8080/auth/2
+Content-Type: application/json
+
+{
+    "password": "123456"
 }
